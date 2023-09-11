@@ -105,10 +105,8 @@ class UserController extends Controller
     }
     function logout()
     {
-        $user = Auth::user();
-        if($user){
-            User::where('id',$user->id)->first()->delete();
-        }
+
+        Auth::logout();
         return redirect()->route('login');
 
     }
