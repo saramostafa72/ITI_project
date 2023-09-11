@@ -52,8 +52,8 @@
         <br>
         <br>
         @if(Session::has('success'))
-    <div class="alert alert-danger">{{Session::get('success')}}</div>
-    @endif
+      <div class="alert alert-danger">{{Session::get('success')}}</div>
+       @endif
     </div>
 
     <table class="table" >

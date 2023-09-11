@@ -65,7 +65,7 @@
         </div>
         <div class="col-4">
             @if(Session::has('success'))
-            <div class="alert alert-danger">{{Session::get('success')}}</div>
+            <div class="alert alert-success">{{Session::get('success')}}</div>
             @endif
             @foreach ( $searchProducts as $product )
                 <img class='images'src="/images/{{$product->image}}"  alt="" >

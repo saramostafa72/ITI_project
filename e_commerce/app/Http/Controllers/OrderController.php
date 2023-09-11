@@ -58,6 +58,9 @@ class OrderController extends Controller
         foreach ($carts as $cart) {
             $total_price += $cart->totalprice;
         }
+        if($total_price == 0){
+            return redirect()->back()->with('success', "You should choose a product first.");
+        }
         $order = new Order();
         $order->user_id =$user->id;
         $order->price = $total_price;
@@ -70,6 +73,7 @@ class OrderController extends Controller
         }
         Cart::where('user_id',$user->id)->delete();
         return redirect()->back()->with('success', "Your Order has been made SUCCESSFULLY.");
+
     }
 
     /**

@@ -17,10 +17,12 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-     function orders()
-     {
-         return $this->hasMany(Order::class);
-     }
+
+    //  function orders()
+    //  {
+    //      return $this->hasMany(Order::class);
+    //  }
+
     protected $fillable = [
         'name',
         'email',

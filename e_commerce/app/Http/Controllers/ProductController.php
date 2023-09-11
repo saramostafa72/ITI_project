@@ -128,7 +128,7 @@ class ProductController extends Controller
     {
         //
         Product::where('id',$id)->first()->delete();
-       return redirect()->route('product.index');
+       return redirect()->route('product.view');
     }
 
     function ProductsOrder($id)

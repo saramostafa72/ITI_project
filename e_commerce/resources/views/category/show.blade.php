@@ -62,15 +62,15 @@
             <span>Products</span>
             <br>
             <br>
-            @if(Session::has('success'))
-            <div class="alert alert-danger">{{Session::get('success')}}</div>
-             @endif
         </div>
         <div class="col-4">
+            @if(Session::has('success'))
+            <div class="alert alert-success">{{Session::get('success')}}</div>
+             @endif
             @foreach ( $category->products as $product )
-                <img class='images'src="/images/{{$product->image}}"  alt="" >
-                <h2 style="color: black">{{$product->name}}</h2>
-                <p style="color: black"><b>{{$product->price}}<b></p>
+            <img class='images'src="/images/{{$product->image}}"  alt="" >
+            <h2 style="color: black">Name : {{$product->name}}</h2>
+            <p style="color: black">Price : <b>{{$product->price}}<b></p>
                 <form action="{{route('cart.store')}}" method="post" enctype="multipart/form-data">
                     @csrf
                 <input type="hidden" name="product_id" value="{{ $product->id }}">
