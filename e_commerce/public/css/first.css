@@ -1,0 +1,27 @@
+section {
+    width: 500px;
+    height: 580px;
+    margin: 70px auto;
+    margin-left: 200px;
+    padding: 20px;
+    border-radius: 25px;
+    }
+
+body {
+  background-color: #f5f5f5;
+  background-image: url("https://www.lecoindesentrepreneurs.fr/wp-content/uploads/2020/11/e-commerce.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+h1 {
+  text-align: center;
+}
+.btn-primary {
+  background-color: #BCB88A;
+  border-color: #BCB88A;
+  text-align: center;
+}
