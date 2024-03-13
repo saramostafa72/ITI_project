@@ -3,7 +3,7 @@
 "E_commerece" is a user-friendly website developed using HTML, CSS, PHP, and Laravel. This project provides a wide range of products (Clothes) that the user can purchase and 
 It offers aresponsive website.
 
-### What is the project Functionality ?
+### What is the project Functionalities ?
 
 - User registration.
 - Profile management.
